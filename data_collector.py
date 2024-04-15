@@ -5,18 +5,18 @@ import uuid
 
 IMAGE_PATH = "CollectedImages"
 
-labels = ['Hello', 'Yes', 'No', 'Thanks', 'IloveYou', 'Please']
+labels = ['start', 'stop', 'date']
 
-number_of_images = 5
+number_of_images = 50
 
 for label in labels:
     img_path = os.path.join(IMAGE_PATH, label)
-    os.makedirs(img_path)
+    #os.makedirs(img_path)
+    os.makedirs(img_path, exist_ok=True)
 
-    #open camera 
     cap = cv2.VideoCapture(0)
     print(f"Collecting images for {label}")
-    time.sleep(3)
+    time.sleep(5)
 
     for imgnum in range(number_of_images):
         ret,frame = cap.read()
