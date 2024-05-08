@@ -4,9 +4,7 @@ import time
 import uuid
 
 IMAGE_PATH = "CollectedImages"
-
 labels = ['start', 'stop', 'date']
-
 number_of_images = 50
 
 for label in labels:
@@ -16,6 +14,8 @@ for label in labels:
 
     cap = cv2.VideoCapture(0)
     print(f"Collecting images for {label}")
+    print("====="*40)
+
     time.sleep(5)
 
     for imgnum in range(number_of_images):
