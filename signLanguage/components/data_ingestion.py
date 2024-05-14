@@ -72,6 +72,9 @@ class DataIngestion:
             logging.info(f"Data ingestion artifact: {data_ingestion_artifact.feature_store_path}")
 
             print("##############"*6)
+            print(data_ingestion_artifact)
+            print(data_ingestion_artifact.data_zip_file_path)
+            print(data_ingestion_artifact.feature_store_path)
             print(type(data_ingestion_artifact))
 
             return data_ingestion_artifact
