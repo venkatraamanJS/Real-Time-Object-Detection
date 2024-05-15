@@ -24,7 +24,7 @@ https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 ```bash
 #Configure aws crediential (secret key & access key)
 
-aws configure
+#aws configure
 ```
 
 
