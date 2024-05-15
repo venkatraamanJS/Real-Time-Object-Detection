@@ -24,8 +24,8 @@ aws configure
 ```
 ```
 (Categories_huut) venkat@amtexs-MacBook-Pro Layers % aws configure --profile VenkatRam                                                                        
-AWS Access Key ID [None]:  AKIA2QGELPGCJCXHBLYD                            
-AWS Secret Access Key [None]: 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
+AWS Access Key ID [None]:                             
+AWS Secret Access Key [None]: 
 Default region name [None]: ap-south-1
 Default output format [None]: 
 (Categories_huut) venkat@amtexs-MacBook-Pro Layers % export AWS_PROFILE=VenkatRam
