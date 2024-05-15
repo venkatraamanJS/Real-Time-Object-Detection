@@ -29,6 +29,8 @@ class DataIngestion:
             logging.info(f"Downloading data from {dataset_url} into file {zip_file_path}")
             urllib.request.urlretrieve(dataset_url, zip_file_path)
             logging.info(f"Downloaded data from {dataset_url} into file {zip_file_path}")
+            print("###############"*6)
+            print(zip_file_path)
             return zip_file_path
 
         except Exception as e:
@@ -47,7 +49,8 @@ class DataIngestion:
             with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
                 zip_ref.extractall(feature_store_path)
             logging.info(f"Extracting zip file: {zip_file_path} into dir: {feature_store_path}")
-
+            print("###############"*6)
+            print(feature_store_path)
             return feature_store_path
 
         except Exception as e:
@@ -72,7 +75,6 @@ class DataIngestion:
             logging.info(f"Data ingestion artifact: {data_ingestion_artifact.feature_store_path}")
 
             print("##############"*6)
-            print(data_ingestion_artifact)
             print(data_ingestion_artifact.data_zip_file_path)
             print(data_ingestion_artifact.feature_store_path)
             print(type(data_ingestion_artifact))

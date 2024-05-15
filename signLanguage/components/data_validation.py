@@ -9,11 +9,7 @@ from signLanguage.entity.artifacts_entity import (DataIngestionArtifact,
 
 
 class DataValidation:
-    def __init__(
-        self,
-        data_ingestion_artifact: DataIngestionArtifact,
-        data_validation_config: DataValidationConfig,
-    ):
+    def __init__(self,data_ingestion_artifact: DataIngestionArtifact,data_validation_config: DataValidationConfig,):
         try:
             self.data_ingestion_artifact = data_ingestion_artifact
             self.data_validation_config = data_validation_config
@@ -61,7 +57,7 @@ class DataValidation:
 
             if status:
                 shutil.copy(self.data_ingestion_artifact.data_zip_file_path, os.getcwd())
-
+            #for training purpose i need my dataset in root folder , so i am copying to root folder 
             return data_validation_artifact
 
         except Exception as e:
