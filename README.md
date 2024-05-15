@@ -1,4 +1,5 @@
-# Real-Time-Object-Detection
+# End-to-end-Object-Detection-Project
+
 
 ## Workflows
 
@@ -8,6 +9,9 @@
 - components
 - pipeline
 - app.py
+
+
+
 
 ## Project Configuration
 
@@ -22,6 +26,7 @@ https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 aws configure
 ```
+
 
 ```bash
 #Create a s3 bucket for model pusher. name is mentioned in the consrtant
@@ -47,17 +52,3 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-
-
-
-
-
-
-(Categories_huut) venkat@amtexs-MacBook-Pro Layers % aws configure --profile VenkatRam                                                                        
-AWS Access Key ID [None]:  AKIA2QGELPGCJCXHBLYD                            
-AWS Secret Access Key [None]: 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
-Default region name [None]: ap-south-1
-Default output format [None]: 
-(Categories_huut) venkat@amtexs-MacBook-Pro Layers % export AWS_PROFILE=VenkatRam
-export AWS_PROFILE=VenkatRam
-aws s3 ls
